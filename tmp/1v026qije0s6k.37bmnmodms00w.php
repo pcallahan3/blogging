@@ -1,7 +1,7 @@
 
 
     <?php foreach (($users?:[]) as $user): ?>
-    <div class="well">
+    <div class="well" >
         <thead>
             <tr>
             <strong>
@@ -11,7 +11,6 @@
                    <?= trim($user['title']) ?><br>
                    <th scope="col">Post:</th>
                    <?= trim($user['post']) ?>
-              
             </strong>
             </tr>
         </thead>

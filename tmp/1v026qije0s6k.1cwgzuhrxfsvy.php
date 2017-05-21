@@ -1,4 +1,4 @@
-<repeat group="{{ @posts }}" value="{{ @post }}">
+<?php foreach (($posts?:[]) as $post): ?>
 
 
 <div class="container">
@@ -8,12 +8,12 @@
        <thead>
             <tr>
             <strong>
-                <th scope="col"><a href="{{ @BASE.'/post/update/'. @user.id }}"Name:</a></th>
-                  {{ trim(@post.name) }}<br>
+                <th scope="col"><a href="<?= $BASE.'/post/update/'. $user['id'] ?>"Name:</a></th>
+                  <?= trim($post['name']) ?><br>
                     <th scope="col">Title:</th>
-                   {{ trim(@post.title) }}<br>
+                   <?= trim($post['title']) ?><br>
                    <th scope="col">Post:</th>
-                   {{ trim(@post.post) }}
+                   <?= trim($post['post']) ?>
               
             </strong>
             </tr>
@@ -23,4 +23,4 @@
   </div>
 </div>
 
-</repeat>
+<?php endforeach; ?>

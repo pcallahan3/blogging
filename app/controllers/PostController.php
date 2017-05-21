@@ -36,7 +36,7 @@ class PostController extends Controller {
      
         } else
         {
-            $user->getById($this->f3->get('PARAMS.id'));
+            $post->getById($this->f3->get('PARAMS.id'));
             $this->f3->set('post',$post);
             $this->f3->set('page_head','Update Post');
             $this->f3->set('view','post/update.htm');

@@ -6,6 +6,14 @@
                 height:170px;
                 width:170px;
                 float:right;
+                margin: 20px;
+                text-align:center;
+                
+               
+                top: 200px;
+                right: 100;
+                
+                
             } 
 
         </style>
@@ -19,7 +27,8 @@
  
         <div class="container">
             <div class="jumbotron">
-                <h1><?= $page_head ?></h1>
+                <h1 style="text-align:center;"><?= $page_head ?></h1>
             </div>
              
-            <?php echo $this->render('user/nav.htm',NULL,get_defined_vars(),0); ?>
+            
+            <!--<?php echo $this->render('user/nav.htm',NULL,get_defined_vars(),0); ?>-->
