@@ -20,13 +20,13 @@
     
     <div class="input-prepend">
         <span class="add-on"><i class="icon-user icon-black"></i> Title</span>
-        <input type="text" id="name" name="name" value="" class="input-xlarge" />
+        <input type="text" id="name" name="title" value="" class="input-xlarge" />
     </div>
     <br/><br/>
     
    <div class="input-prepend">
         <span class="add-on add-on-area "><i class="icon-home icon-black"></i> Post</span>
-        <textarea row="5" id="address" name="address" class="input-xlarge"></textarea>
+        <textarea row="5" id="address" name="post" class="input-xlarge"></textarea>
     </div><br/><br/>
  
     <div class="control-group">
