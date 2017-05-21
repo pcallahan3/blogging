@@ -4,27 +4,15 @@
         <span class="add-on"><i class="icon-user icon-black"></i> Name</span>
         <input type="text" id="name" name="name" value="<?= $POST['name'] ?>" class="input-xlarge" />
     </div><br/><br/>
- 
-    <div class="input-prepend">
-        <span class="add-on"><i class="icon-envelope icon-black"></i> Email</span>
-        <input type="text" id="email" name="email" value="<?= $POST['email'] ?>" class="input-xlarge" />
-    </div>
-    <br/><br/>
- 
-    <div class="input-prepend">
-        <span class="add-on"><i class="icon-headphones icon-black"></i> Mobile</span>
-        <input type="text" id="mobile" name="mobile" value="<?= $POST['mobile'] ?>" class="input-xlarge" />
-    </div><br/><br/>
-
-    
+  
      <div class="input-prepend">
         <span class="add-on"><i class="icon-headphones icon-black"></i> Title</span>
-        <input type="text" id="mobile" name="mobile" value="<?= $POST['title'] ?>" class="input-xlarge" />
+        <input type="text" id="mobile" name="title" value="<?= $POST['title'] ?>" class="input-xlarge" />
     </div><br/><br/>
     
      <div class="input-prepend">
         <span class="add-on"><i class="icon-headphones icon-black"></i> Post</span>
-        <input type="text" id="mobile" name="mobile" value="<?= $POST['post'] ?>" class="input-xlarge" />
+        <input type="text" id="mobile" name="post" value="<?= $POST['post'] ?>" class="input-xlarge" />
     </div><br/><br/>
  
     <div class="control-group">

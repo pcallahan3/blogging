@@ -101,3 +101,9 @@
 [21-May-2017 12:29:38 America/Chicago] [IT328/blogged/lib/base.php:1793] call_user_func_array()
 [21-May-2017 12:29:38 America/Chicago] [IT328/blogged/lib/base.php:1609] Base->call()
 [21-May-2017 12:29:38 America/Chicago] [IT328/blogged/index.php:7] Base->run()
+[21-May-2017 14:59:38 America/Chicago] HTTP 405 (GET /user/update)
+[21-May-2017 14:59:38 America/Chicago] [IT328/blogged/lib/base.php:1658] Base->error()
+[21-May-2017 14:59:38 America/Chicago] [IT328/blogged/index.php:7] Base->run()
+[21-May-2017 15:32:35 America/Chicago] PHP Fatal error:  Class 'Post' not found in /home/pcallahan/public_html/IT328/blogged/app/controllers/PostController.php on line 30
+[21-May-2017 15:32:35 America/Chicago] Fatal error: Class 'Post' not found
+[21-May-2017 15:32:35 America/Chicago] [IT328/blogged/app/controllers/PostController.php:30] 

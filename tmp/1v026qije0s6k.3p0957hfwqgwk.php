@@ -5,17 +5,7 @@
         <input type="text" id="name" name="name" value="" class="input-xlarge" />
     </div>
     <br/><br/>
- 
-    <div class="input-prepend">
-        <span class="add-on"><i class="icon-envelope icon-black"></i> Email</span>
-        <input type="text" id="email" name="email" value="" class="input-xlarge" />
-    </div>
-    <br/><br/>
- 
-    <div class="input-prepend">
-        <span class="add-on"><i class="icon-headphones icon-black"></i> Mobile</span>
-        <input type="text" id="mobile" name="mobile" value="" class="input-xlarge" />
-    </div><br/><br/>
+
  
     
     <div class="input-prepend">

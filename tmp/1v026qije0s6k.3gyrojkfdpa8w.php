@@ -5,6 +5,7 @@
             .well{
                 height:170px;
                 width:170px;
+                float:right;
             } 
 
         </style>
