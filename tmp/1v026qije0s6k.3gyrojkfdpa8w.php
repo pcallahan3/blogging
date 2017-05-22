@@ -12,7 +12,7 @@
             }
             
                 .profile-well{
-                    height:40px;
+                    height:140px;
                     width:100%;
                     float:right;
                     margin: 20px;
@@ -54,3 +54,4 @@
              
             
             <!--<?php echo $this->render('blogger/nav.htm',NULL,get_defined_vars(),0); ?>-->
+            <?php echo $this->render('blogger/navbar.htm',NULL,get_defined_vars(),0); ?>

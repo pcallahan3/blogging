@@ -72,4 +72,9 @@ class BloggerController extends Controller {
         $this->f3->set('blogs',$blogs);
         $this->f3->set('view','post/blogger-post.htm');
     }
+    
+    function aboutUs()
+    {
+        echo Template::instance()->render('about-us.htm');
+    }
 }

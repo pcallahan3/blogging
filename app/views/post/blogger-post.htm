@@ -1,1 +1,19 @@
-<h1 class="blogger-post">{{ trim(@blogs.title) }}</h1>
+
+
+
+
+<div class="container">
+  
+  <div class="well well-sm profile-well">
+    <img src="images/user.png" alt="User Image" style="width:304px;height:228px;"><br>
+    <h1 class="blogger-post">{{ trim(@blogs.title) }}</h1>
+    <h4>{{ trim(@blogs.post) }}</h4><br>
+  </div>
+</div>
+
+
+
+
+
+<!--Use this code for navigaiton
+<a href="{{ @BASE.'/blogger/view-post/'. @PARAMS.id }}">-->
