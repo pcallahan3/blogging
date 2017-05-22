@@ -8,13 +8,13 @@
                 float:right;
                 margin: 20px;
                 text-align:center;
-                
-               
-                top: 200px;
-                right: 100;
-                
-                
-            } 
+    
+            }
+            .profile-well{
+                height:30px;
+                width:170px;
+                color:red;
+            }
 
         </style>
         <base href="<?= $BASE.'/'.$UI ?>" />
@@ -31,4 +31,4 @@
             </div>
              
             
-            <!--<?php echo $this->render('user/nav.htm',NULL,get_defined_vars(),0); ?>-->
+            <!--<?php echo $this->render('blogger/nav.htm',NULL,get_defined_vars(),0); ?>-->
