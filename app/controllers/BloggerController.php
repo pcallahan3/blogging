@@ -84,4 +84,10 @@ class BloggerController extends Controller {
          $this->f3->set('view','blogger/become-a-blogger.htm');
         
     }
+    
+    function login()
+    {
+         $this->f3->set('view','blogger/login.htm');
+        
+    }
 }

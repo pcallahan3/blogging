@@ -1,7 +1,7 @@
 <div class="container">
   
   <div class="well well-sm profile-well">
-    <h1>{{ trim(@blogs.name) }} Blogs</h1><br>
+    <h1>{{ trim(@blogs.username) }} Blogs</h1><br>
   </div>
 </div>
 
@@ -11,7 +11,7 @@
     <h4>My blogs:</h4><hr>
     
     <br> <th scope="col"><a href="{{ @BASE.'/blogger/view-post/'. @PARAMS.id }}">{{ trim(@blogs.title) }}:</a></th>
-    <h4>{{ trim(@blogs.post) }}</h4><br>
+    <h4>{{ trim(@blogs.content) }}</h4><br>
   </div>
 </div>
 

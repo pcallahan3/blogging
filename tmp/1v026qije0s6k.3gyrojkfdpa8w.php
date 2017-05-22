@@ -55,5 +55,5 @@
             </div>
              
             
-            <!--<?php echo $this->render('blogger/nav.htm',NULL,get_defined_vars(),0); ?>-->
+            <?php echo $this->render('blogger/navbar.htm',NULL,get_defined_vars(),0); ?>
             

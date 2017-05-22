@@ -1,12 +1,12 @@
 <?php
-class PostController extends Controller {
+class BlogPostController extends Controller {
  
     function index()
     {
         $blog = new BlogPost($this->db);
         $this->f3->set('posts',$blog->all());
         $this->f3->set('page_head','Post List');        
-        $this->f3->set('view','post/list.htm');
+        $this->f3->set('view','blogger/list.htm');
     }
     
     function create()
