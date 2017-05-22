@@ -1,21 +1,16 @@
+<div class="container">
+  
+  <div class="well well-sm profile-well">
+    <h1>{{ trim(@blogs.name) }} Blogs</h1><br>
+  </div>
+</div>
 
-<repeat group="{{ @bloggers }}" value="{{ @blogger }}">
-    <div class="well" >
-        
-        <thead>
-            <tr>
-                
-            <strong>
-                
-                <img src="images/user.png" alt="Mountain View" style="width:304px;height:228px;"><br>
-                
-                    <th scope="col">Title:</th>
-                   {{ trim(@blogger.title) }}<br>
-                   <th scope="col">Post:</th>
-                   {{ trim(@blogger.post) }}
-            </strong>
-            </tr>
-        </thead>
-    </div>
-   
-</repeat>
+<div class="container">
+  
+  <div class="well well-sm content-well">
+    <h4>My blogs:</h4><hr>
+    <h4>{{ trim(@blogs.title) }}</h4><br>
+  </div>
+</div>
+
+ 

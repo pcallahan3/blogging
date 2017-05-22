@@ -58,8 +58,7 @@ class BloggerController extends Controller {
     {
         $blogger = new Blogger($this->db);
         $blogger->getById($this->f3->get('PARAMS.id'));
-        $this->f3->set('bloggers',$blogger);
-        $this->f3->set('page_head','Blogger Profile');
+        $this->f3->set('blogs',$blogger);
         $this->f3->set('view','blogger/blogger-profile.htm');
         
     }
