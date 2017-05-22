@@ -53,4 +53,14 @@ class PostController extends Controller {
      
         $this->f3->reroute('/');
     }
+    
+    /*
+    function viewPost()
+    {
+        $post = new BlogPost($this->db);
+        $post->getById($this->f3->get('PARAMS.id'));
+        $this->f3->set('blogs',$blogger);
+        $this->f3->set('view','post/blogger-post.htm');
+        
+    }*/
 }

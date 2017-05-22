@@ -33,6 +33,9 @@
                     margin: 20px;
                     text-align:left;
                 }
+                .blogger-post{
+                     text-align:center;
+                }
         
 
         </style>

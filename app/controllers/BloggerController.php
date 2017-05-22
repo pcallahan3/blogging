@@ -3,8 +3,8 @@ class BloggerController extends Controller {
  
     function index()
     {
-        $blogger = new Blogger($this->db);
-        $this->f3->set('bloggers',$blogger->all());
+        $bloggers = new Blogger($this->db);
+        $this->f3->set('bloggers',$bloggers->all());
         $this->f3->set('page_head','Blogger List');        
         $this->f3->set('view','blogger/list.htm');
     }
@@ -54,6 +54,7 @@ class BloggerController extends Controller {
         $this->f3->reroute('/');
     }
     
+    
      function bloggerProfile()
     {
         $blogger = new Blogger($this->db);
@@ -61,5 +62,14 @@ class BloggerController extends Controller {
         $this->f3->set('blogs',$blogger);
         $this->f3->set('view','blogger/blogger-profile.htm');
         
+    }
+    
+    
+    function viewPost()
+    {
+        $blogs = new Blogger($this->db);
+        $blogs->getById($this->f3->get('PARAMS.id'));
+        $this->f3->set('blogs',$blogs);
+        $this->f3->set('view','post/blogger-post.htm');
     }
 }

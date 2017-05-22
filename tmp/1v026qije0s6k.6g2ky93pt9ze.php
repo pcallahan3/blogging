@@ -8,9 +8,12 @@
 <div class="container">
   
   <div class="well well-sm content-well">
-    <h4>My blogs:</h4><hr style="color:black;">
-    <h4><?= trim($blogs['title']) ?></h4><br>
+    <h4>My blogs:</h4><hr>
+    
+    <br> <th scope="col"><a href="<?= $BASE.'/blogger/view-post/'. $PARAMS['id'] ?>"><?= trim($blogs['title']) ?>:</a></th>
+    <h4><?= trim($blogs['post']) ?></h4><br>
   </div>
 </div>
 
+ 
  
