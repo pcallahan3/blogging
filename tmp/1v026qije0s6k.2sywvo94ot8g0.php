@@ -69,8 +69,7 @@ hr {
    
 
         
-<!--Inlcude vertical nabar-->
-<?php echo $this->render('navbar.php',NULL,get_defined_vars(),0); ?>
+
 
     <div class="panel-body" >
       <h4><strong>The internet is abuzz with our blog content</strong></h4>

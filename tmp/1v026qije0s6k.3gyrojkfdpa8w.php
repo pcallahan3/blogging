@@ -36,6 +36,7 @@
                 .blogger-post{
                      text-align:center;
                 }
+           
         
 
         </style>
@@ -43,6 +44,7 @@
         <title><?= $site ?></title>
         <!-- Bootstrap -->;
         <link href="../../ui/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link rel="stylesheet" href="ui/css/styles.css">
     </head>
  
     <body>
@@ -54,4 +56,4 @@
              
             
             <!--<?php echo $this->render('blogger/nav.htm',NULL,get_defined_vars(),0); ?>-->
-            <?php echo $this->render('blogger/navbar.htm',NULL,get_defined_vars(),0); ?>
+            

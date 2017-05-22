@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <style>
-            .well{
+ .well{
                 height:170px;
                 width:170px;
                 float:right;
@@ -36,24 +32,3 @@
                 .blogger-post{
                      text-align:center;
                 }
-           
-        
-
-        </style>
-        <base href="{{ @BASE.'/'.@UI }}" />
-        <title>{{ @site }}</title>
-        <!-- Bootstrap -->;
-        <link href="../../ui/css/bootstrap.min.css" rel="stylesheet" media="screen">
-        <link rel="stylesheet" href="ui/css/styles.css">
-    </head>
- 
-    <body>
- 
-        <div class="container">
-            <div class="jumbotron">
-                <h1 style="text-align:center;">{{ @page_head }}</h1>
-            </div>
-             
-            
-            <!--<include href="blogger/nav.htm" />-->
-            

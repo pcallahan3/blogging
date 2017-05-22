@@ -75,6 +75,13 @@ class BloggerController extends Controller {
     
     function aboutUs()
     {
-        echo Template::instance()->render('about-us.htm');
+    
+        $this->f3->set('view','about-us.htm');
+    }
+    
+    function becomeABlogger()
+    {
+         $this->f3->set('view','blogger/become-a-blogger.htm');
+        
     }
 }
