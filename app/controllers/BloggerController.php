@@ -1,14 +1,28 @@
 <?php
+
+
+/**
+ *Controller for a blogger
+ */
 class BloggerController extends Controller {
- 
+
+    /**
+     *Retrieves all users in DB
+     */
     function index()
     {
         $bloggers = new Blogger($this->db);
+        $posts = new BlogPost($this->db);
         $this->f3->set('bloggers',$bloggers->all());
+        $this->f3->set('posts',$posts->all());
         $this->f3->set('page_head','Blogger List');        
         $this->f3->set('view','blogger/list.htm');
     }
     
+    
+    /**
+     *Creates users 
+     */
     function create()
     {
         if($this->f3->exists('POST.create'))
@@ -25,6 +39,9 @@ class BloggerController extends Controller {
         }
     }
     
+    /**
+     *Updates users
+     */
     public function update()
     {
         $blogger = new Blogger($this->db);
@@ -43,6 +60,9 @@ class BloggerController extends Controller {
         }
     }
     
+    /**
+     *Deletes users
+     */
     function delete()
     {
         if($this->f3->exists('PARAMS.id'))
@@ -65,6 +85,9 @@ class BloggerController extends Controller {
     }
     
     
+    /**
+     *View post of a user
+     */
     function viewPost()
     {
         $blogs = new Blogger($this->db);
@@ -73,6 +96,9 @@ class BloggerController extends Controller {
         $this->f3->set('view','blogger/blogger-post.htm');
     }
     
+    /**
+     *Renders about-us page
+     */
     function aboutUs()
     {
     
@@ -80,14 +106,16 @@ class BloggerController extends Controller {
         
     }
     
-    
+    /**
+     *Allows a user to sign up to become a blogger
+     */
     function createBlogger()
     {
         if($this->f3->exists('POST.create'))
         {
             $blogger = new Blogger($this->db);
             $blogger->add();
-            $this->f3->reroute('blogger/whats-on-your-mind.htm');
+            $this->f3->reroute('blogger/create-blog.htm');
      
         } else
         {
@@ -96,12 +124,18 @@ class BloggerController extends Controller {
         }
     }
     
+    /**
+     *Login for a user
+     */
     function login()
     {
          $this->f3->set('view','blogger/login.htm');
         
     }
     
+    /**
+     *Renders a the create-blog.htm
+     */
     function createBlog()
     {
        
@@ -110,6 +144,9 @@ class BloggerController extends Controller {
         
     }
     
+    /**
+     *Allows user to update their blog
+     */
      function updateBlog()
     {
          $blogger = new Blogger($this->db);

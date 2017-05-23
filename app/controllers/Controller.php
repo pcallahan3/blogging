@@ -1,5 +1,8 @@
 <?php
 
+/**
+ *Controler to hold DB credentials
+ */
 class Controller {
  
     protected $f3;
@@ -22,6 +25,7 @@ class Controller {
 		$this->db=$db;
     }
     
+	 //event handler function
     function beforeroute() {        
     }
  

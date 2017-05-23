@@ -2,16 +2,16 @@
 
   
     <?php foreach (($bloggers?:[]) as $blogger): ?>
-     
+      
     <div class="well" >
         
         <thead>
             <tr>
             <strong>
                 <img src="ui/img/user.png" alt="User" style="width:304px;height:228px;"><br>
-                <th scope="col"><a href="<?= $BASE.'/blogger/profile/'. $blogger['id'] ?>">Name:</a></th>
+                <th scope="col">Name:</th>
                   <?= trim($blogger['username']) ?><br></a>
-                  <th scope="col">Title:</th>
+                  <th scope="col"><a href="<?= $BASE.'/blogger/profile/'. $blogger['id'] ?>">Title:</th></a>
                    <?= trim($blogger['title']) ?><br>
                    <th scope="col">Post:</th>
                    <?= trim($blogger['content']) ?>

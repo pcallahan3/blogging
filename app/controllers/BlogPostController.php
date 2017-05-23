@@ -1,6 +1,15 @@
 <?php
+
+/**
+ *Controller for a blog post
+ */
 class BlogPostController extends Controller {
  
+ 
+    
+    /**
+     *Retrieves all posts in DB
+     */
     function index()
     {
         $blog = new BlogPost($this->db);
@@ -9,6 +18,10 @@ class BlogPostController extends Controller {
         $this->f3->set('view','blogger/list.htm');
     }
     
+    
+    /**
+     *Creates posts
+     */
     function create()
     {
         if($this->f3->exists('POST.create'))
@@ -25,6 +38,10 @@ class BlogPostController extends Controller {
         }
     }
     
+    
+     /**
+     *Updates posts
+     */
     public function update()
     {
         $blog = new BlogPost($this->db);
@@ -43,6 +60,10 @@ class BlogPostController extends Controller {
         }
     }
     
+    
+    /**
+     *Deletes posts
+     */
     function delete()
     {
         if($this->f3->exists('PARAMS.id'))
@@ -54,13 +75,5 @@ class BlogPostController extends Controller {
         $this->f3->reroute('/');
     }
     
-    /*
-    function viewPost()
-    {
-        $post = new BlogPost($this->db);
-        $post->getById($this->f3->get('PARAMS.id'));
-        $this->f3->set('blogs',$blogger);
-        $this->f3->set('view','post/blogger-post.htm');
-        
-    }*/
+   
 }
