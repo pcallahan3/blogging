@@ -7,7 +7,7 @@
   </div>
 
 
-<form action="<?= $BASE.'/blogger/create' ?>" method="post" class="form-horizontal">
+<form action="{{ @BASE.'/blogger/create' }}" method="post" class="form-horizontal">
  
    
     
@@ -25,7 +25,7 @@
     <div class="control-group">
         <div class="">
             <input type="hidden" name="create" value="create" />
-            <button type="submit" class="btn btn-primary"><i class="icon-ok icon-white"></i> Add Post</button>
+            <button type="submit" class="btn btn-primary"><i class="icon-ok icon-white"></i> Save</button>
         </div>
     </div>
  

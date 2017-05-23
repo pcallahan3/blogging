@@ -87,8 +87,7 @@ class BloggerController extends Controller {
         {
             $blogger = new Blogger($this->db);
             $blogger->add();
-     
-            //$this->f3->reroute('blogger/whats-on-your-mind.htm');
+            $this->f3->reroute('blogger/whats-on-your-mind.htm');
      
         } else
         {
@@ -103,10 +102,11 @@ class BloggerController extends Controller {
         
     }
     
-    function whatsOnYourMind()
+    function createBlog()
     {
-        
-          echo Template::instance()->render('blogger/whats-on-your-mind.htm');
+       
+        $this->f3->set('view','blogger/create-blog.htm');
+         
         
     }
 }
