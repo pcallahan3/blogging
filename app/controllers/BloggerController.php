@@ -38,7 +38,7 @@ class BloggerController extends Controller {
         {
             $blogger->getById($this->f3->get('PARAMS.id'));
             $this->f3->set('blogger',$blogger);
-            $this->f3->set('page_head','Update User');
+            $this->f3->set('page_head','Update Post');
             $this->f3->set('view','blogger/update.htm');
         }
     }
@@ -107,6 +107,25 @@ class BloggerController extends Controller {
        
         $this->f3->set('view','blogger/create-blog.htm');
          
+        
+    }
+    
+     function updateBlog()
+    {
+         $blogger = new Blogger($this->db);
+     
+        if($this->f3->exists('POST.update'))
+        {
+            $blogger->edit($this->f3->get('POST.id'));
+            $this->f3->reroute('/');
+     
+        } else
+        {
+            $blogger->getById($this->f3->get('PARAMS.id'));
+            $this->f3->set('view','blogger/update-blog.htm');
+        }
+           
+       
         
     }
 }

@@ -55,7 +55,7 @@
     <div class="control-group">
         <div class="">
             <input type="hidden" name="create" value="create" />
-            <button type="submit" class="btn btn-primary"><i class="icon-ok icon-white"></i> Start Blogging</button>
+            <button type="submit" class="btn btn-primary"> Start Blogging</button>
         </div>
     </div>
  
