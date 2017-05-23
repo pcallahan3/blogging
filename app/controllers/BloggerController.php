@@ -20,7 +20,7 @@ class BloggerController extends Controller {
      
         } else
         {
-            $this->f3->set('page_head','Create User');
+            $this->f3->set('page_head','Create Post');
             $this->f3->set('view','blogger/create.htm');
         }
     }
@@ -59,7 +59,7 @@ class BloggerController extends Controller {
     {
         $blogger = new Blogger($this->db);
         $blogger->getById($this->f3->get('PARAMS.id'));
-        $this->f3->set('blogs',$blogger);
+        $this->f3->set('blogger',$blogger);
         $this->f3->set('view','blogger/blogger-profile.htm');
         
     }
@@ -70,24 +70,43 @@ class BloggerController extends Controller {
         $blogs = new Blogger($this->db);
         $blogs->getById($this->f3->get('PARAMS.id'));
         $this->f3->set('blogs',$blogs);
-        $this->f3->set('view','post/blogger-post.htm');
+        $this->f3->set('view','blogger/blogger-post.htm');
     }
     
     function aboutUs()
     {
     
         $this->f3->set('view','about-us.htm');
+        
     }
     
-    function becomeABlogger()
+    
+    function createBlogger()
     {
-         $this->f3->set('view','blogger/become-a-blogger.htm');
-        
+        if($this->f3->exists('POST.create'))
+        {
+            $blogger = new Blogger($this->db);
+            $blogger->add();
+     
+            //$this->f3->reroute('blogger/whats-on-your-mind.htm');
+     
+        } else
+        {
+          
+             $this->f3->set('view','blogger/become-a-blogger.htm');
+        }
     }
     
     function login()
     {
          $this->f3->set('view','blogger/login.htm');
+        
+    }
+    
+    function whatsOnYourMind()
+    {
+        
+          echo Template::instance()->render('blogger/whats-on-your-mind.htm');
         
     }
 }

@@ -6,27 +6,23 @@
 
 <title>About Us</title>
 
-<meta charset="utf-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link rel="stylesheet" type="text/css" href="style.css">
 
 <style>
     .panel {
-   
-   
-    margin-left:auto;
-    margin-right:auto;
-    padding: 10;
-    width: 800px;
-    height: 150px;
-    background-color: #f1f1f1;
+        text-align: center;
+        position: absolute;
+        top: 10px;
+        left: 320px;
+        margin-left:auto;
+        margin-right:auto;
+        padding: 40;
+        width: 760px;
+        height: 150px;
+        background-color: #f1f1f1;
+        
+        
 }
 
 
@@ -36,13 +32,13 @@ img{
 
 .panel-body{
    
-    padding: 10;
+    padding: 30;
     width: 800px;
     height: 410px;
     background-color: #f1f1f1;
-     position: absolute;
+    position: absolute;
     top: 167px;
-    right: 215px;
+    left: 320px;
 }
 
 hr {
@@ -65,12 +61,6 @@ hr {
        </div>
 
     </div>
-   
-   
-
-        
-
-
     <div class="panel-body" >
       <h4><strong>The internet is abuzz with our blog content</strong></h4>
       <hr

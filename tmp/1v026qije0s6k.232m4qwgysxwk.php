@@ -1,16 +1,16 @@
-<form action="{{ @BASE.'/blogger/create' }}" method="post" class="form-horizontal">
+<form action="<?= $BASE.'/blogger/create' ?>" method="post" class="form-horizontal">
  
    
     
     <div class="input-prepend">
-        <span class="add-on"> Title</span>
+        <span class="add-on"><i class="icon-user icon-black"></i> Title</span>
         <input type="text" id="name" name="title" value="" class="input-xlarge" />
     </div>
     <br/><br/>
     
    <div class="input-prepend">
-        <span class="add-on add-on-area "> Post</span>
-        <textarea row="5" id="address" name="content" class="input-xlarge"></textarea>
+        <span class="add-on add-on-area "><i class="icon-home icon-black"></i> Post</span>
+        <textarea row="5" id="address" name="post" class="input-xlarge"></textarea>
     </div><br/><br/>
  
     <div class="control-group">
